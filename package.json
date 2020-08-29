@@ -1,0 +1,30 @@
+{
+  "name": "wakeonlanbot",
+  "version": "0.0.1",
+  "description": "A wake-on-lan bot",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodejs index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SaphireVert/wakeonlanbot.git"
+  },
+  "keywords": [
+    "bot",
+    "telegram",
+    "WOL",
+    "wake",
+    "on",
+    "lan"
+  ],
+  "author": "SaphireVert",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SaphireVert/wakeonlanbot/issues"
+  },
+  "homepage": "https://github.com/SaphireVert/wakeonlanbot#readme",
+  "dependencies": {
+    "telebot": "^1.4.1"
+  }
+}
