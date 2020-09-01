@@ -26,7 +26,7 @@ bot.on('/wol', (msg) => {
     }
 });
 bot.on('/reboot', (msg) => {
-    msg.reply.text(msg.text);
+    msg.reply.text("Rebooting...");
     console.log(msg);
     if(msg.from.id == 976140946){
       console.log("Yeah, la bonne personne !");
