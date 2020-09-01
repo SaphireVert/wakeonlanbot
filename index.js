@@ -25,6 +25,24 @@ bot.on('/wol', (msg) => {
       console.log("Merde ! Un intrus !");
     }
 });
+bot.on('/reboot', (msg) => {
+    msg.reply.text(msg.text);
+    console.log(msg);
+    if(msg.from.id == 976140946){
+      console.log("Yeah, la bonne personne !");
+      const exec = require('child_process').exec;
+      const myShellScript = exec('reboot.sh');
+      myShellScript.stdout.on('data', (data)=>{
+          console.log(data);
+          // do whatever you want here with data
+      });
+      myShellScript.stderr.on('data', (data)=>{
+          console.error(data);
+      });
+    } else {
+      console.log("Merde ! Un intrus !");
+    }
+});
 // bot.on('/wol', (msg) => msg.reply.text(msg));
 
 bot.start();
