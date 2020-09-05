@@ -1,3 +1,4 @@
 node_modules
 secrets.json
 wol_PC.sh
+reboot.sh
