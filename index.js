@@ -31,7 +31,7 @@ bot.on('/reboot', (msg) => {
     if(msg.from.id == 976140946){
       console.log("Yeah, la bonne personne !");
       const exec = require('child_process').exec;
-      const myShellScript = exec('reboot.sh');
+      const myShellScript = exec('scriptReboot.sh');
       myShellScript.stdout.on('data', (data)=>{
           console.log(data);
           // do whatever you want here with data
